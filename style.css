@@ -1,0 +1,362 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  gap: 130px;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 16px;
+}
+
+nav .item {
+  width: 130px;
+  text-align: center;
+}
+
+nav .navbar-colapse {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+nav .item.logo {
+  flex-grow: 5;
+  text-align: left;
+  padding-left: 60px;
+}
+
+nav .burger {
+  display: none;
+}
+
+footer {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+footer .item {
+  width: 130px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+footer a:hover {
+  color: orange;
+}
+
+footer .item.name {
+  flex-grow: 5;
+  text-align: left;
+  padding-left: 60px;
+}
+
+@media (max-width: 800px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  nav .burger {
+    display: block;
+  }
+
+  nav .navbar-colapse {
+    display: none;
+  }
+
+  nav .navbar-colapse {
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  nav .navbar-colapse .item {
+    width: 100%;
+  }
+
+  nav .navbar-colapse a {
+    display: block;
+    padding: 5px;
+  }
+}
+
+/* home */
+
+.home.hiro {
+  background-image: url(images/HIRO.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  /* margin-top: -140px; */
+}
+
+.home.hiro a {
+  color: white;
+}
+
+.home.hiro h1 {
+  margin-top: 140px;
+  margin-left: 100px;
+  font-size: 84px;
+  color: white;
+  line-height: 120px;
+}
+
+.home.content {
+  background-color: white;
+}
+
+.home.content .wrapper {
+  width: 960px;
+  margin: 0px auto;
+}
+
+.home.content h2 {
+  text-align: center;
+  color: rgb(251, 164, 3);
+  font-size: 80px;
+  margin: 0;
+  margin-top: 50px;
+  padding: 16px 0;
+}
+
+.home.content h3 {
+  text-align: center;
+  color: black;
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+li.box {
+  width: 100%;
+  height: 600px;
+  margin: 50px auto;
+  list-style: none;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-content {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0, 0.35);
+}
+
+.izvidnici-pic {
+  background-image: url(images/Work1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stobi {
+  background-image: url(images/STOBI.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-3 {
+  background-image: url(images/mockup.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* izvidnici  */
+
+.izvidnici .hero {
+  display: flex;
+  gap: 10px;
+  margin: 0 20px;
+  margin-top: 50px;
+}
+
+.izvidnici .hero > * {
+  flex-grow: 1;
+  width: 50%;
+  min-height: 500px;
+}
+
+.izvidnici .hero-description {
+  position: relative;
+}
+
+.izvidnici .hero-description button {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  background: white;
+  color: rgb(255, 111, 0);
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 2px solid rgb(255, 111, 0);
+  border-radius: 5px;
+}
+
+.izvidnici .hero-description button:hover {
+  background: rgb(255, 111, 0, 0.2);
+}
+
+.izvidnici .project-description {
+}
+
+.izvidnici .project-description .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.izvidnici .project-description .wrapper > div {
+  /* text-align: center; */
+}
+
+.izvidnici .project-description .wrapper ul {
+  margin-left: 0;
+  padding: 0;
+}
+
+.izvidnici .project-description .wrapper li {
+  list-style: none;
+}
+
+.izvidnici .project-description p {
+  max-width: 300px;
+}
+
+.izvidnici .project-description {
+  font-size: 25px;
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+.izvidnici .project-description h3 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.izvidnici .problems.funny-bg {
+  background-image: url(images/bg-funny.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.izvidnici .problems .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+.izvidnici .problem-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.izvidnici .problems .wrapper > * {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.izvidnici .design-solutions {
+  margin: 0 20px;
+  margin-top: 150px;
+  width: 100%;
+}
+
+.izvidnici .design-solutions .design-solutions-title {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 20px auto;
+  margin-top: 100px;
+}
+
+.clearfix-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.clearfix-container > * {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.izvidnici .design-solution {
+  /* overflow: hidden; */
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 99%;
+}
+
+/* .izvidnici .design-solution > div {
+  height: 500px;
+  width: 50%;
+} */
+
+.izvidnici .design-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 50px 0;
+}
+
+.izvidnici .design-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.izvidnici .style-guide {
+  margin-left: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.izvidnici .style-guide h3 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.izvidnici .style-guide img {
+  margin: auto;
+}

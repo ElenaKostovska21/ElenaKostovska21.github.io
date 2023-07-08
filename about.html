@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elena CV - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="item logo">
+        <a href="index.html">EK</a>
+      </div>
+      <div class="item burger" id="burger-btn">
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </div>
+      <div class="navbar-colapse">
+        <div class="item link">
+          <a href="#">Work</a>
+        </div>
+        <div class="item link">
+          <a href="#">About</a>
+        </div>
+        <div class="item link">
+          <a href="cv.pdf">CV</a>
+        </div>
+      </div>
+    </nav>
+
+    <div style="display: flex; width: 90%; margin: 20px auto">
+      <div style="width: 50%">
+        <h3 style="color: #fe5800; font-size: 80px; font-weight: bold">
+          Elena Kostovska BIO
+        </h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div style="width: 50%; text-align: center; margin-bottom: 100px">
+        <img src="images/logos.png" width="70%" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="item name">Elena Kostovska</div>
+      <div class="item">
+        <a href="#">Contact.</a>
+      </div>
+      <div class="item">
+        <a href="#"><i class="fa fa-envelope"></i></a>
+      </div>
+      <div class="item">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <div class="item">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      window.onload = () => {
+        const btn = document.querySelector("#burger-btn a");
+        const menu = document.querySelector(".navbar-colapse");
+        let menuOpen = false;
+        btn.onclick = () => {
+          if (menuOpen) {
+            menu.style.display = "none";
+          } else {
+            menu.style.display = "block";
+          }
+          menuOpen = !menuOpen;
+        };
+      };
+    </script>
+  </body>
+</html>

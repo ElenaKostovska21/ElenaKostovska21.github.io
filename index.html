@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elena CV - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="home hiro">
+      <nav>
+        <div class="item logo">
+          <a href="index.html">EK</a>
+        </div>
+        <div class="item burger" id="burger-btn">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="navbar-colapse">
+          <div class="item link">
+            <a href="#">Work</a>
+          </div>
+          <div class="item link">
+            <a href="about.html">About</a>
+          </div>
+          <div class="item link">
+            <a href="cv.pdf">CV</a>
+          </div>
+        </div>
+      </nav>
+
+      <h1>
+        Hello i'm Elena... <br />
+        UX&UI Designer!
+      </h1>
+    </div>
+
+    <div class="content home">
+      <div class="wrapper">
+        <h2>Let's Work Together!</h2>
+        <h3>Work</h3>
+
+        <ul>
+          <li class="box izvidnici-pic">
+            <a class="box-content" href="izvidnici.html">
+              Izvidnici MK <br />
+              #UX Research #UI <br />
+              Design
+            </a>
+          </li>
+          <li class="box stobi">
+            <div class="box-content">
+              Stobi <br />
+              #UX Research #UI Design <br />
+              #Visual Design
+            </div>
+          </li>
+          <li class="box project-3">
+            <div class="box-content">
+              Website <br />
+              #UX Research #UI Design <br />
+              #Visual Design
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div class="item name">Elena Kostovska</div>
+      <div class="item">
+        <a href="#">Contact.</a>
+      </div>
+      <div class="item">
+        <a href="#"><i class="fa fa-envelope"></i></a>
+      </div>
+      <div class="item">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <div class="item">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      window.onload = () => {
+        const btn = document.querySelector("#burger-btn a");
+        const menu = document.querySelector(".navbar-colapse");
+        let menuOpen = false;
+        btn.onclick = () => {
+          if (menuOpen) {
+            menu.style.display = "none";
+          } else {
+            menu.style.display = "block";
+          }
+          menuOpen = !menuOpen;
+        };
+      };
+    </script>
+  </body>
+</html>
